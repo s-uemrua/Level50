@@ -1,4 +1,4 @@
-package project;
+package ミニプロジェクト完成版;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -40,6 +40,10 @@ public class FileWrite {
 			pw.println();
 			pw.println("ーーーーー");
 			
+			System.out.println();
+			System.out.println("<ターン履歴>");
+			pw.println();
+			pw.println("<ターン履歴>");
 			String Log[];
 			Log = game.showlog();
 			for(int i = 0;i<Log.length;i++) {
