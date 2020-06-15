@@ -1,4 +1,4 @@
-package ミニプロジェクト完成版;
+package project;
 
 import java.util.ArrayList;
 import java.util.List;
