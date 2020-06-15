@@ -1,4 +1,4 @@
-package project;
+package ミニプロジェクト完成版;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,8 +70,8 @@ public class Game {
 	}
 
 	public String showWinner() {
-		System.out.println("勝者は" + currentplayer.getOrder() + "です。");
-		return"勝者は" + currentplayer.getOrder() + "です。";
+		System.out.println("勝者：" + currentplayer.getOrder());
+		return"勝者：" + currentplayer.getOrder();
 	}
 
 	public String[] showlog() {
@@ -85,8 +85,8 @@ public class Game {
 	}
 
 	public String showDrow() {
-		System.out.println("引き分けです。");
-		return "引き分けです。";
+		System.out.println("引き分け");
+		return "引き分け";
 	}
 
 	private boolean gameMode() {
