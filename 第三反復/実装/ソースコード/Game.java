@@ -6,12 +6,21 @@ import java.util.Scanner;
 import java.io.File;
 
 public class Game {
-	private List<Turn> log  = new ArrayList<Turn>();
-	private Player player1 = new HumanPlayer("先攻","〇");
+	private List<Turn> log;
+	private Player player1;
 	private Player player2 ;
 	private FileRead fr;
-	private Player currentplayer = player1;
-	private Board board = new Board();
+	private Player currentplayer;
+	private Board board;
+	
+	
+	Game(){
+		log  = new ArrayList<Turn>();
+		player1 = new HumanPlayer("先攻","〇");
+		currentplayer = player1;
+		board = new Board();
+	}
+	
 	
 	public static void main(String[] args) {
 		Game game = new Game();
