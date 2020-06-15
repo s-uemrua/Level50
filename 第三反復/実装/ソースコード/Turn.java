@@ -5,7 +5,7 @@ public class Turn {
 	private Player player;
 	private Board board ;
 	private Cell cell ;
-	String mark;
+	
 	
 	public Turn(Player player,Board board) {
 		this.player = player;
@@ -14,6 +14,7 @@ public class Turn {
 
 	public  void start() {
 		boolean judge = false;
+		String mark;
 		 int[] array  = new int[2];
 		while(true) {
 			array =player.inputCoordinate();
@@ -30,8 +31,8 @@ public class Turn {
 	}
 	
 	public String getLog() {
-		System.out.println(player.getOrder()+ ":(" + cell.getX() + "," + cell.getY() + ") " + mark);
-		return player.getOrder()+ ":(" + cell.getX() + "," + cell.getY() + ") " + mark;
+		System.out.println(player.getOrder()+ ":(" + cell.getX() + "," + cell.getY() + ") " + cell.getMark());
+		return player.getOrder()+ ":(" + cell.getX() + "," + cell.getY() + ") " + cell.getMark();
 	}
 }
 
